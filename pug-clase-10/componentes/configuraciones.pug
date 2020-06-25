@@ -1,0 +1,13 @@
+-var title = "titulo principal Pro"
+-var titulos = ["Titulo principal", "Sub Titulo 1", "Sub Titulo 2", "Sub Titulo 1","Sub Titulo 3" ]
+-var user = "david";
+-var enlaces= ['Acerca', 'Noticias', 'Contactenos']
+
+mixin caja(imagen, title, description)
+   .caja
+        .caja__imagen: img(src="./images/"+imagen, alt="")
+        .caja__contenido  
+          h3=title
+          p=description
+
+

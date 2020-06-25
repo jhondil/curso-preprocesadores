@@ -1,0 +1,8 @@
+.estadistica--articulos {
+  height: 70px;
+  padding: 20px;
+  border-top: 1px solid color-primario;
+}
+.estadistica--articulos ul {
+  display: flex;
+}

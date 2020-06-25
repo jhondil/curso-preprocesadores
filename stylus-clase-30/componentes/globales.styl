@@ -1,0 +1,48 @@
+fuente1 = 'lato', sans-sereif
+fuente2 = 'Oswald', sans-sereif
+color-primario = #333333
+color-secundario = #8841d4
+color-claro = #fff
+
+//mixin
+
+contendor()
+  display flex
+  width 90%
+  margin 0 auto
+  padding 30px 0
+
+caja_sombra()
+  background:  color-claro
+  box-shadow:  0 20px 33px 0 rgba(0,0,0,0.80)
+
+// funciones
+
+opacidad(color, cantidad)
+  alpha(color, cantidad)
+
+// loop
+
+for header in 3 2 1
+  h{header}
+    font-size: 35px -(5*header)
+    margin 0
+
+
+//condicion
+
+titulos(fuente)
+  if fuente == fuente1
+    font-family: fuente1
+  else 
+    font-family: fuente2
+    font-weight 800
+    text-transform: uppercase
+
+*
+  box-sizing border-box
+
+body 
+  margin 0
+  titulos(fuente1)
+  color color-primario

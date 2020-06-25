@@ -1,0 +1,19 @@
+extend componentes/plantilla.pug
+block contenidos
+    section.intro
+      .intro__imagen: img(src="./images/imagen.png", alt="")
+      .intro__contenido
+        h2 #{titulos[0]}
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium omnis vel incidunt dolor reiciendis modi nulla porro vitae libero pariatur animi, velit minima nemo est non voluptatibus aspernatur, ipsum odio.
+          span Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur distinctio reprehenderit odio, facilis, rerum ducimus animi corporis
+
+        a.boton leer más
+    //- ul 
+    //-   each titulo in titulos
+    //-     li=titulo
+
+    main.contenido
+      +caja('imagen.png', titulos[1], 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur distinctio reprehenderit odio, facilis, rerum ducimus animi corporis')
+      +caja('imagen.png', titulos[2], 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur distinctio reprehenderit odio, facilis, rerum ducimus animi corporis')
+      +caja('imagen.png', titulos[3], 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur distinctio reprehenderit odio, facilis, rerum ducimus animi corporis')
+      
